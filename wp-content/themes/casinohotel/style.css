@@ -6,3 +6,6 @@ Author URI: https://payelbanejee.com
 Description: This is my custom theme
 Version: 1.0
 */
+main {
+  overflow: hidden;
+}
