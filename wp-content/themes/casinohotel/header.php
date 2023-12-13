@@ -28,12 +28,12 @@
     background-image: 
     url('<?php echo esc_url($hero_image['url']); ?>" alt="<?php echo esc_attr($hero_image['alt']); ?>');">
 
-                <div class="row d-flex justify-content-start align-items-start">
+                <div class="row text-center text-md-start">
                     <div class="col-12 col-md-6 text-white" data-aos="fade-right">
                         <img class="mb-4" src="<?php echo $logo[0]; ?>">
                         <h1 class="mb-4"><?php echo get_field('hero_heading') ?></h1>
                         <h5 class="mb-4"><?php echo get_field('hero_sub_heading')?></h5>
-                        <a class="btn p-btn bg-pink btn-lg" href="#!" role="button">
+                        <a class="btn p-btn bg-pink btn-lg" href="#table" role="button">
                             Explore Today
                             <span><img class="btn-arrow"
                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-down.png"></span>
