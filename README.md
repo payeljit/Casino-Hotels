@@ -11,3 +11,7 @@ npm run build
 I have uploaded the files in my github account, my initial commit is huge, as I got along with the task so intensely I forgot to upload them at first. Applogise for that.
 
 I have used AOS plugin to get some animation effect. I can do the same effects on Jquery as well, that will take longer time, hence I have had used AOS.
+
+# My git account for this project
+
+https://github.com/payeljit/Casino-Hotels
