@@ -71,7 +71,7 @@
                          <?php
                   if(empty( $rating_number )){ echo 'No rating added';} 
                      else {
-                     // Listing the stars veriables using PHP list function
+                     // Listing the stars veriables using PHP list function, if number has point get half start to concatinate, I have used fontawsome start icons.
                      list($fullStars, $halfStar) = explode('.', (float)$rating_number);
                     
                      if(!empty ($fullStars)){
@@ -152,7 +152,8 @@
                          <?php
                   if(empty( $rating_number )){ echo 'No rating added';} 
                   else {
-                      // Listing the stars veriables using PHP list function
+                    //  To display the verious ring based of score, I created below veriable to store all the css classes to use later.
+
                       list($fullStars, $halfStar) = explode('.', (float)$rating_number);
                       
                       if(!empty ($fullStars)){

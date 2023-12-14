@@ -5,12 +5,12 @@
         $custom_logo_id =   get_theme_mod('custom_logo');
         $logo = wp_get_attachment_image_src($custom_logo_id);
     }
-    // banner image
+
    $hero_image = get_field('hero_image'); 
    $hero_heading = get_field('hero_heading');
    $hero_sub_heading = get_field('hero_sub_heading');
    ?>
-
+     <!-- Used banner image as div background -->
      <div class="p-5 w-100 bg-image h-200" style="
     height: 636px;
     background-image: 
@@ -20,8 +20,11 @@
          <div class="row text-center text-md-start">
              <div class="col-12 col-md-6 text-white" data-aos="fade-right">
                  <a href="<?php echo home_url();?>"><img class="mb-4" src="<?php echo $logo[0]; ?>"></a>
+                 <!-- Main heading -->
                  <h1 class="mb-4"><?php echo $hero_heading;?></h1>
+                 <!-- Sub heading -->
                  <h5 class="mb-4"><?php echo $hero_sub_heading;?></h5>
+                 <!-- Button -->
                  <a class="btn p-btn bg-pink btn-lg" href="#table" role="button">
                      Explore Today
                      <span><img class="btn-arrow"
