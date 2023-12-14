@@ -1,10 +1,34 @@
 /*!********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./wp-content/themes/casinohotel/assets/src/app.scss ***!
   \********************************************************************************************************************************************/
+h1 {
+  font-size: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 600px) {
   /* Footer style */
   .footer-menu {
-    flex-direction: column;
+    flex-direction: column !important;
+  }
+  .footer-menu li {
+    margin: 10px 50px !important;
   }
   /* Table Hotel */
   .top_rated_box {
@@ -13,9 +37,9 @@
   .hotel_table {
     border-left: unset;
   }
-  .circle {
-    margin-left: auto;
-    width: 77px;
+  .circle-good {
+    margin-left: auto !important;
+    max-width: 77px !important;
   }
   /* Footer */
   .footer-icons {
@@ -24,6 +48,12 @@
   }
   .age-18-icon {
     text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 23px;
   }
 }
 /* Circle Progress */
@@ -90,27 +120,6 @@ p {
   font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 55px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
 .bg-green {
   background-color: #27d04c;
 }
@@ -157,7 +166,7 @@ hr {
   color: #403e3e;
 }
 
-/* About us */
+/*================== About us =================*/
 .section-img img {
   max-width: 500px;
   height: auto;
@@ -175,14 +184,14 @@ hr {
   padding-right: 6%;
 }
 
-/* Font awesome colour change */
+/* ================== Font awesome colour change ====================*/
 .fa-star,
 .fa-star-half {
   color: #e8c544;
   display: inline;
 }
 
-/* Cards hotel table style */
+/* ==================== Cards hotel table style ===================*/
 .hotels .z-index {
   z-index: 9;
 }
@@ -220,14 +229,17 @@ hr {
   top: 83px;
 }
 
-/* Footer style */
+/* ======================== Footer style =====================*/
 footer .footer-menu {
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style-type: none;
+}
+footer .footer-menu li {
+  margin: 0 50px;
 }
 footer .footer-menu li a {
   color: #f3f4f6;
