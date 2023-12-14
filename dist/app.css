@@ -109,7 +109,7 @@ hr {
 .circle-good,
 .circle-not-good,
 .circle-bad {
-  background: radial-gradient(circle closest-side, white 0, white 80%, transparent 80%, transparent 100%, white 0), conic-gradient(#fc115c 0, #fc115c 94%, #fff 0, #fff 100%);
+  background: radial-gradient(circle closest-side, #ffffff 0, #ffffff 80%, transparent 80%, transparent 100%, #ffffff 0), conic-gradient(#fc115c 0, #fc115c 94%, #ffffff 0, #ffffff 100%);
   position: relative;
   width: 100px;
   min-height: 87px;
@@ -149,11 +149,11 @@ hr {
 }
 
 .circle-not-good {
-  background: radial-gradient(circle closest-side, white 0, white 80%, transparent 80%, transparent 100%, white 0), conic-gradient(#fc115c 0, #fc115c 80%, #fff 0, #fff 100%);
+  background: radial-gradient(circle closest-side, #ffffff 0, #ffffff 80%, transparent 80%, transparent 100%, #ffffff 0), conic-gradient(#fc115c 0, #fc115c 80%, #ffffff 0, #ffffff 100%);
 }
 
 .circle-bad {
-  background: radial-gradient(circle closest-side, white 0, white 80%, transparent 80%, transparent 100%, white 0), conic-gradient(#fc115c 0, #fc115c 70%, #fff 0, #fff 100%);
+  background: radial-gradient(circle closest-side, #ffffff 0, #ffffff 80%, transparent 80%, transparent 100%, #ffffff 0), conic-gradient(#fc115c 0, #fc115c 70%, #ffffff 0, #ffffff 100%);
 }
 
 /* Font awsome colour change */
@@ -192,7 +192,7 @@ hr {
   display: inline-grid;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #ffffff;
   text-align: center;
 }
 
