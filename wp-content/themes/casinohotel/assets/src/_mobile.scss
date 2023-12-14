@@ -1,7 +1,10 @@
 @media only screen and (max-width: 600px) {
   /* Footer style */
   .footer-menu {
-    flex-direction: column;
+    flex-direction: column !important;
+    li {
+      margin: 10px 50px !important;
+    }
   }
   /* Table Hotel */
   .top_rated_box {
@@ -10,9 +13,9 @@
   .hotel_table {
     border-left: unset;
   }
-  .circle {
-    margin-left: auto;
-    width: 77px;
+  .circle-good {
+    margin-left: auto !important;
+    max-width: 77px !important;
   }
   /* Footer */
   .footer-icons {
@@ -22,5 +25,10 @@
   .age-18-icon {
     text-align: center;
   }
-  /*  */
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 23px;
+  }
 }

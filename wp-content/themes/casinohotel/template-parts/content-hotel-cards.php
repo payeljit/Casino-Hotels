@@ -142,7 +142,7 @@
                      <?php endif;?>
                  </div>
                  <div class="col-6 position-relative">
-                     <!-- Display Score pink ring -->
+                     <!-- Display Score pink circle -->
                      <div class="circle-good position-relative">
                          <h2 class="position-absolute"><?php echo $score ;?></h2>
                      </div>
