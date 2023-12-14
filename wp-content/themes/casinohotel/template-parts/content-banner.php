@@ -18,7 +18,7 @@
          loading="lazy">
 
          <div class="row text-center text-md-start">
-             <div class="col-12 col-md-6 text-white" data-aos="fade-right">
+             <div class="col-12 col-md-6 text-white">
                  <a href="<?php echo home_url();?>"><img class="mb-4" src="<?php echo $logo[0]; ?>"></a>
                  <!-- Main heading -->
                  <h1 class="mb-4"><?php echo $hero_heading;?></h1>
