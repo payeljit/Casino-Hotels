@@ -4,7 +4,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $white;
 }
 a {
   color: $black;
@@ -27,6 +26,7 @@ a {
 .text-light {
   color: $lightGrey;
 }
+// Below class is for all rounded buttons layout
 .p-btn {
   border-radius: 100px;
   padding: 11px 18px;
@@ -88,6 +88,7 @@ hr {
   backface-visibility: hidden;
 
   opacity: 1;
+  // Added some animation fade in effect to the circles, used keyframe function 'fadeInOpacity below
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -101,20 +102,22 @@ hr {
     opacity: 1;
   }
 }
-.circle-good h2,
-.circle-not-good h2,
-.circle-bad h2 {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: -0.01em;
-  text-decoration: none;
-  display: block;
-  /* This will center the h2 content into the parent circle div */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(15deg);
+.circle-good,
+.circle-not-good,
+.circle-bad {
+  h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    display: block;
+    /* This will center the h2 content into the parent circle div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
 }
 .circle-not-good {
   background: radial-gradient(
@@ -138,65 +141,67 @@ hr {
     ),
     conic-gradient($pink 0, $pink 70%, $white 0, $white 100%);
 }
-/* Font awsome colour change */
+/* Font awesome colour change */
 .fa-star,
 .fa-star-half {
   color: $yellow;
   display: inline;
 }
-/* Cards table styel */
-.hotels .z-index {
-  z-index: 9;
-}
-.top_rated_box {
-  background-color: $blue;
-  max-width: 217px;
-  height: 50px;
-  top: -34px;
-  z-index: -1;
-  border-radius: 20px;
-}
-
-.hotel_table {
-  display: flex;
-  flex-wrap: wrap;
-  border-left: 32px solid $pink;
-  border-right: 20px solid $white;
-  border-radius: 10px;
-  box-shadow: 2px 10px 54px 10px rgba(84, 121, 247, 0.14);
-}
-
-.hotel_table_col {
-  flex: 1 0 18%; /*  It just represents your minimum starting width. */
-  padding: 50px 0;
-  display: inline-grid;
-  align-items: center;
-  justify-content: center;
-  background-color: $white;
-  text-align: center;
-}
-.score_ring {
-  left: 106px;
-}
-.hotel-counter {
-  font-size: 22px;
-  left: 19px;
-  top: 83px;
+/* Cards hotel table style */
+.hotels {
+  .z-index {
+    z-index: 9;
+  }
+  .top_rated_box {
+    background-color: $blue;
+    max-width: 217px;
+    height: 50px;
+    top: -34px;
+    z-index: -1;
+    border-radius: 20px;
+  }
+  .hotel_table {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 32px solid $pink;
+    border-right: 20px solid $white;
+    border-radius: 10px;
+    box-shadow: 2px 10px 54px 10px rgba(84, 121, 247, 0.14);
+  }
+  .hotel_table_col {
+    flex: 1 0 18%; /*  It just represents your minimum starting width. */
+    padding: 50px 0;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    text-align: center;
+  }
+  .score_ring {
+    left: 106px;
+  }
+  .hotel-counter {
+    font-size: 22px;
+    left: 19px;
+    top: 83px;
+  }
 }
 
 /* Footer style */
-.footer-menu {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-}
-.footer-menu li a {
-  color: $cream;
-  text-decoration: none;
-}
-.footer .copyright {
-  color: $footerGreyText;
+footer {
+  .footer-menu {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
+  .footer-menu li a {
+    color: $cream;
+    text-decoration: none;
+  }
+  .footer .copyright {
+    color: $footerGreyText;
+  }
 }

@@ -25,11 +25,9 @@
   .age-18-icon {
     text-align: center;
   }
-  /*  */
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
 }
 
 a {
@@ -156,19 +154,18 @@ hr {
   background: radial-gradient(circle closest-side, #ffffff 0, #ffffff 80%, transparent 80%, transparent 100%, #ffffff 0), conic-gradient(#fc115c 0, #fc115c 70%, #ffffff 0, #ffffff 100%);
 }
 
-/* Font awsome colour change */
+/* Font awesome colour change */
 .fa-star,
 .fa-star-half {
   color: #e8c544;
   display: inline;
 }
 
-/* Cards table styel */
+/* Cards hotel table style */
 .hotels .z-index {
   z-index: 9;
 }
-
-.top_rated_box {
+.hotels .top_rated_box {
   background-color: #5c33ff;
   max-width: 217px;
   height: 50px;
@@ -176,8 +173,7 @@ hr {
   z-index: -1;
   border-radius: 20px;
 }
-
-.hotel_table {
+.hotels .hotel_table {
   display: flex;
   flex-wrap: wrap;
   border-left: 32px solid #fc115c;
@@ -185,8 +181,7 @@ hr {
   border-radius: 10px;
   box-shadow: 2px 10px 54px 10px rgba(84, 121, 247, 0.14);
 }
-
-.hotel_table_col {
+.hotels .hotel_table_col {
   flex: 1 0 18%; /*  It just represents your minimum starting width. */
   padding: 50px 0;
   display: inline-grid;
@@ -195,19 +190,17 @@ hr {
   background-color: #ffffff;
   text-align: center;
 }
-
-.score_ring {
+.hotels .score_ring {
   left: 106px;
 }
-
-.hotel-counter {
+.hotels .hotel-counter {
   font-size: 22px;
   left: 19px;
   top: 83px;
 }
 
 /* Footer style */
-.footer-menu {
+footer .footer-menu {
   max-width: 100%;
   display: flex;
   flex-direction: row;
@@ -215,12 +208,10 @@ hr {
   align-items: center;
   list-style-type: none;
 }
-
-.footer-menu li a {
+footer .footer-menu li a {
   color: #f3f4f6;
   text-decoration: none;
 }
-
-.footer .copyright {
+footer .footer .copyright {
   color: #939393;
 }

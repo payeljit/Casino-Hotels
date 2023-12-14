@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*********************************************************/
 /***/ (() => {
 
-eval("// import \"bootstrap\";\r\n\n\n//# sourceURL=webpack://casinohotel/./wp-content/themes/casinohotel/assets/src/app.js?");
+eval("//import \"bootstrap\";\r\n\n\n//# sourceURL=webpack://casinohotel/./wp-content/themes/casinohotel/assets/src/app.js?");
 
 /***/ })
 
