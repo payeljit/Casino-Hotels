@@ -10,10 +10,14 @@
     wp_head();
     ?>
 </head>
+<!-- Body class function added to specify the classes on each page to use these classes in css or js -->
 
-<body>
+<body <?php body_class() ?>>
     <header>
         <!-- ======================  Top banner section ========================  -->
-        <?php get_template_part('template-parts/content', 'banner')?>
+        <?php if( is_front_page()) :
+         get_template_part('template-parts/content', 'banner');
+        endif;
+        ?>
 
     </header>
