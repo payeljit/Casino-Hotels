@@ -1,2 +1,202 @@
 //@import "./node_modules/bootstrap/scss/bootstrap";
 @import "colors";
+@import "mobile";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+a {
+  color: #000000;
+}
+.bg-green {
+  background-color: #27d04c;
+}
+.bg-grey {
+  background-color: #f1f1f1;
+}
+.bg-dark {
+  background-color: #101010;
+}
+.bg-pink {
+  background-color: #fc115c;
+}
+.text-pink {
+  color: #fc115c;
+}
+.text-light {
+  color: #292828;
+}
+.p-btn {
+  border-radius: 100px;
+  padding: 11px 18px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-arrow {
+  padding-left: 18px;
+}
+h5,
+p {
+  font-size: 16px;
+}
+hr {
+  max-width: 85% !important;
+  color: #f3f4f6;
+  margin: 0 auto;
+}
+.hr-for-light-bg {
+  color: #403e3e;
+}
+/* About us */
+.section-img img {
+  max-width: 500px;
+  height: auto;
+  margin-left: auto !important;
+}
+.btn:hover {
+  background-color: rgb(0, 0, 0.5);
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.padding-extra {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+/* Circle Progress */
+.circle-good,
+.circle-not-good,
+.circle-bad {
+  background: radial-gradient(
+      circle closest-side,
+      white 0,
+      white 80%,
+      transparent 80%,
+      transparent 100%,
+      white 0
+    ),
+    conic-gradient(#fc115c 0, #fc115c 94%, #fff 0, #fff 100%);
+  position: relative;
+  width: 100px;
+  min-height: 87px;
+  margin: 0;
+  transform: rotate(344deg);
+  /* To fix the back face visibility due to transform rotate creating a browser rendered shadow border */
+  backface-visibility: hidden;
+
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.circle-good h2,
+.circle-not-good h2,
+.circle-bad h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  display: block;
+  /* This will center the h2 content into the parent circle div */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+}
+.circle-not-good {
+  background: radial-gradient(
+      circle closest-side,
+      white 0,
+      white 80%,
+      transparent 80%,
+      transparent 100%,
+      white 0
+    ),
+    conic-gradient(#fc115c 0, #fc115c 80%, #fff 0, #fff 100%);
+}
+.circle-bad {
+  background: radial-gradient(
+      circle closest-side,
+      white 0,
+      white 80%,
+      transparent 80%,
+      transparent 100%,
+      white 0
+    ),
+    conic-gradient(#fc115c 0, #fc115c 70%, #fff 0, #fff 100%);
+}
+/* Font awsome colour change */
+.fa-star,
+.fa-star-half {
+  color: #e8c544;
+  display: inline;
+}
+/* Cards table styel */
+.hotels .z-index {
+  z-index: 9;
+}
+.top_rated_box {
+  background-color: #5c33ff;
+  max-width: 217px;
+  height: 50px;
+  top: -34px;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.hotel_table {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 32px solid #fc115c;
+  border-right: 20px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 10px 54px 10px rgba(84, 121, 247, 0.14);
+}
+
+.hotel_table_col {
+  flex: 1 0 18%; /*  It just represents your minimum starting width. */
+  padding: 50px 0;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+}
+.score_ring {
+  left: 106px;
+}
+.hotel-counter {
+  font-size: 22px;
+  left: 19px;
+  top: 83px;
+}
+
+/* Footer style */
+.footer-menu {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.footer-menu li a {
+  color: #f3f4f6;
+  text-decoration: none;
+}
+.footer .copyright {
+  color: #939393;
+}

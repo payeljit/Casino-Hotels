@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  /* Footer style */
+  .footer-menu {
+    flex-direction: column;
+  }
+  /* Table Hotel */
+  .top_rated_box {
+    top: -10px;
+  }
+  .hotel_table {
+    border-left: unset;
+  }
+  .circle {
+    margin-left: auto;
+    width: 77px;
+  }
+  /* Footer */
+  .footer-icons {
+    display: grid;
+    justify-content: center;
+  }
+  .age-18-icon {
+    text-align: center;
+  }
+  /*  */
+}
