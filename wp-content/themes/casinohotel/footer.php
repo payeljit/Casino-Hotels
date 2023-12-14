@@ -6,13 +6,13 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt="">
             </div>
             <?php
-      // Populate wordpress footer menu
+        // Populate wordpress footer menu
          wp_nav_menu(
             array(
                'menu' => 'footer',
                'container' => '',
                'theme_location'=> 'footer',
-               'items_wrap' => '<ul class="footer-menu my-4">%3$s</ul>'
+               'items_wrap' => '<ul class="footer-menu my-4 mx-w-50">%3$s</ul>'
             )
             );
       ?>
@@ -22,11 +22,11 @@
                 &copy; 2022 Top 10 Casinos Worldwide. All rights reserved.
             </div>
             <!-- Be gamling awar icons -->
-            <div class="footer-icons my-4 order-2 order-md-2">
+            <div class="footer-icons  my-4 order-2 order-md-2">
                 <img class="bc-icon"
                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-bc-icon.png"
                     alt="Footer Bc icon">
-                <img class="age-18-icon text-center text-md-end mx-auto pt-4"
+                <img class="age-18-icon text-center text-md-end mx-auto pt-3 pt-md-0"
                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-icon.png" alt="Footer icon">
             </div>
 
