@@ -14,7 +14,8 @@
      <div class="p-5 w-100 bg-image h-200" style="
     height: 636px;
     background-image: 
-    url('<?php echo esc_url($hero_image['url']); ?>" alt="<?php echo esc_attr($hero_image['alt']); ?>');">
+    url('<?php echo esc_url($hero_image['url']); ?>" alt="<?php echo esc_attr($hero_image['alt']); ?>');"
+         loading="lazy">
 
          <div class="row text-center text-md-start">
              <div class="col-12 col-md-6 text-white" data-aos="fade-right">
@@ -24,7 +25,8 @@
                  <a class="btn p-btn bg-pink btn-lg" href="#table" role="button">
                      Explore Today
                      <span><img class="btn-arrow"
-                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-down.png"></span>
+                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-down.png"
+                             alt="Arrow down icon" loading="lazy"></span>
                  </a>
              </div>
          </div>

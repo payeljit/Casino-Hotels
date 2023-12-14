@@ -18,7 +18,8 @@
          <!-- Heading section -->
          <h2 class="text-center mt-5 mb-2"><?php echo get_field('hotel_section_heading'); ?></h2>
          <div class="text-center mb-5">
-             <img class="px-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar.png">
+             <img class="px-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar.png"
+                 alt="Calendar icon" loading="lazy">
              <!-- Current date show -->
              <em><?php echo date("m/d/y");?></em>
          </div>
@@ -53,7 +54,7 @@
                      <div class="hotel_table_col">
                          <?php if( !empty( $table_logo) ): ?>
                          <img class="" src="<?php echo esc_url(  $table_logo['url']); ?>"
-                             alt="<?php echo esc_attr(  $table_logo['alt']); ?>" />
+                             alt="<?php echo esc_attr(  $table_logo['alt']); ?>" loading="lazy" />
                          <?php endif;?>
                      </div>
                      <!-- Display Address -->
@@ -118,7 +119,8 @@
                          <a class="btn p-btn bg-green btn-lg" href="<?php echo $link ;?>" target="_blank" role="button">
                              Visit Hotel
                              <span><img class="btn-arrow"
-                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"></span>
+                                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"
+                                     alt="Arrow right icon" loading="lazy"></span>
                          </a>
                          <a href="<?php echo get_permalink($post->ID);?>">Read review</a>
                          <?php endif; ?>
@@ -138,7 +140,7 @@
                      <!-- Dispaly Company Logo -->
                      <?php if( !empty( $table_logo) ): ?>
                      <img class="" src="<?php echo esc_url(  $table_logo['url']); ?>"
-                         alt="<?php echo esc_attr(  $table_logo['alt']); ?>" />
+                         alt="<?php echo esc_attr(  $table_logo['alt']); ?>" loading="lazy" />
                      <?php endif;?>
                  </div>
                  <div class="col-6 position-relative">
@@ -187,7 +189,8 @@
                      <a class="btn p-btn bg-green btn-lg" href="<?php echo $link ;?>" target="_blank" role="button">
                          Visit Hotel
                          <span><img class="btn-arrow"
-                                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"></span>
+                                 src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"
+                                 alt="Arrow right icon"></span>
                      </a>
 
                      <?php endif; ?>

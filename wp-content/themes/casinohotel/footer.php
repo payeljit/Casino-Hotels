@@ -3,7 +3,9 @@
         <div class="row footer-logo">
             <div class="col">
                 <!-- Get the logo form the given path from stylesheet directory -->
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt="">
+
+                <a href="<?php echo home_url();?>"> <img
+                        src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt=""></a>
             </div>
             <?php
         // Populate wordpress footer menu

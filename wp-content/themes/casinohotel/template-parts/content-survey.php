@@ -18,7 +18,7 @@
          <?php 
             if( !empty($survey_section_image) ): ?>
          <img class="w-100" src="<?php echo esc_url($survey_section_image['url']); ?>"
-             alt="<?php echo esc_attr($section_image['alt']); ?>" />
+             alt="<?php echo esc_attr($section_image['alt']); ?>" loading="lazy" />
          <?php
             endif; 
          ?>

@@ -17,7 +17,7 @@
              <?php
             if (!empty($section_image)): ?>
              <img class="w-100 float-en mb-4" src="<?php echo esc_url($section_image['url']); ?>"
-                 alt="<?php echo esc_attr($section_image['alt']); ?>" />
+                 alt="<?php echo esc_attr($section_image['alt']); ?>" loading="lazy" />
              <?php
             endif;
          ?>
@@ -30,7 +30,8 @@
          <a class="btn p-btn bg-pink btn-lg mt-4" href="#!" role="button">
              Explore Today
              <span><img class="btn-arrow"
-                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"></span>
+                     src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right.png"
+                     alt="Arrow right icon" loading="lazy"></span>
          </a>
      </div>
 
@@ -41,7 +42,7 @@
              <?php
                if (!empty($section_image)): ?>
              <img class="w-100 float-end" src="<?php echo esc_url($section_image['url']); ?>"
-                 alt="<?php echo esc_attr($section_image['alt']); ?>" />
+                 alt="<?php echo esc_attr($section_image['alt']); ?>" loading="lazy" />
              <?php
                endif;
                ?>
