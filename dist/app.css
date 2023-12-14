@@ -26,83 +26,6 @@
     text-align: center;
   }
 }
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  color: #000000;
-}
-
-.bg-green {
-  background-color: #27d04c;
-}
-
-.bg-grey {
-  background-color: #f1f1f1;
-}
-
-.bg-dark {
-  background-color: #101010;
-}
-
-.bg-pink {
-  background-color: #fc115c;
-}
-
-.text-pink {
-  color: #fc115c;
-}
-
-.text-light {
-  color: #292828;
-}
-
-.p-btn {
-  border-radius: 100px;
-  padding: 11px 18px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-}
-
-.btn-arrow {
-  padding-left: 18px;
-}
-
-h5,
-p {
-  font-size: 16px;
-}
-
-hr {
-  max-width: 85% !important;
-  color: #f3f4f6;
-  margin: 0 auto;
-}
-
-.hr-for-light-bg {
-  color: #403e3e;
-}
-
-/* About us */
-.section-img img {
-  max-width: 500px;
-  height: auto;
-  margin-left: auto !important;
-}
-
-.btn:hover {
-  background-color: rgb(0, 0, 1);
-  color: #ffffff;
-  transition: 0.3s;
-}
-
-.padding-extra {
-  padding-left: 6%;
-  padding-right: 6%;
-}
-
 /* Circle Progress */
 .circle-good,
 .circle-not-good,
@@ -152,6 +75,104 @@ hr {
 
 .circle-bad {
   background: radial-gradient(circle closest-side, #ffffff 0, #ffffff 80%, transparent 80%, transparent 100%, #ffffff 0), conic-gradient(#fc115c 0, #fc115c 70%, #ffffff 0, #ffffff 100%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #000000;
+}
+
+p {
+  color: #555555;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.bg-green {
+  background-color: #27d04c;
+}
+
+.bg-grey {
+  background-color: #f1f1f1;
+}
+
+.bg-dark {
+  background-color: #101010;
+}
+
+.bg-pink {
+  background-color: #fc115c;
+}
+
+.text-pink {
+  color: #fc115c;
+}
+
+.text-light {
+  color: #292828;
+}
+
+.p-btn {
+  border-radius: 100px;
+  padding: 11px 18px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-arrow {
+  padding-left: 18px;
+}
+
+hr {
+  max-width: 85% !important;
+  color: #f3f4f6;
+  margin: 0 auto;
+}
+
+.hr-for-light-bg {
+  color: #403e3e;
+}
+
+/* About us */
+.section-img img {
+  max-width: 500px;
+  height: auto;
+  margin-left: auto !important;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 1);
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.padding-extra {
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 /* Font awesome colour change */

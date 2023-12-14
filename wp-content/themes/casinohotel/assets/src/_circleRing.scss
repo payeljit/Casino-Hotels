@@ -1,0 +1,75 @@
+/* Circle Progress */
+.circle-good,
+.circle-not-good,
+.circle-bad {
+  background: radial-gradient(
+      circle closest-side,
+      $white 0,
+      $white 80%,
+      transparent 80%,
+      transparent 100%,
+      $white 0
+    ),
+    conic-gradient($pink 0, $pink 94%, $white 0, $white 100%);
+  position: relative;
+  width: 100px;
+  min-height: 87px;
+  margin: 0;
+  transform: rotate(344deg);
+  /* To fix the back face visibility due to transform rotate creating a browser rendered shadow border */
+  backface-visibility: hidden;
+
+  opacity: 1;
+  // Added some animation fade in effect to the circles, used keyframe function 'fadeInOpacity below
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.circle-good,
+.circle-not-good,
+.circle-bad {
+  h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    display: block;
+    /* This will center the h2 content into the parent circle div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
+}
+.circle-not-good {
+  background: radial-gradient(
+      circle closest-side,
+      $white 0,
+      $white 80%,
+      transparent 80%,
+      transparent 100%,
+      $white 0
+    ),
+    conic-gradient($pink 0, $pink 80%, $white 0, $white 100%);
+}
+.circle-bad {
+  background: radial-gradient(
+      circle closest-side,
+      $white 0,
+      $white 80%,
+      transparent 80%,
+      transparent 100%,
+      $white 0
+    ),
+    conic-gradient($pink 0, $pink 70%, $white 0, $white 100%);
+}
