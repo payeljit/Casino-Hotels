@@ -1,5 +1,8 @@
  <!-- Casino Hotel Table -->
- <?php $args = array(
+ <?php
+
+ 
+ $args = array(
    'meta_key'  => 'score',
    'post_type' => 'casino_hotels',
    'orderby' => 'meta_value',
@@ -8,6 +11,7 @@
  );
 
  $the_query = new WP_Query( $args );
+
 //  To count number of post looping through the total number of post and printing them
  $count_post_number = $the_query->post_count;
  $count = 1;
@@ -34,12 +38,13 @@
          <?php 
             // Hotel custom type loop starts
            while ( $the_query->have_posts() ) : $the_query->the_post();
-            $table_logo = get_field( 'logo', $post_id );
-            $address = get_field( 'address', $post_id );
+            $table_logo = get_field( 'logo' );
+            $address = get_field( 'address' );
             $star_rating = get_field('star_rating');
             $score = get_field('score');
-            $link = get_field( 'link', $post_id );
-            $rating_number = get_field( 'rating_number', $post_id );
+            $link = get_field( 'link' );
+            $rating_number = get_field( 'rating_number' );
+         
            
            ?>
          <div class="col-12 mb-4 position-relative" data-aos="fade-up" data-aos-delay="200">
@@ -65,6 +70,8 @@
                            echo $address;
                            endif;?>
                      </div>
+
+
                      <!-- Display Stars rating -->
                      <div class="hotel_table_col d-flex">
 
